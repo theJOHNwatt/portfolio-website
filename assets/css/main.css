@@ -85,6 +85,14 @@ input, select, textarea {
 		}
 
 	}
+	
+	.main img {
+		border: 1px solid rgb(79, 82, 83);
+	}
+
+	#work img {
+		border:1px solid rgb(79, 82, 83);
+	}
 
 	html {
 		box-sizing: border-box;
@@ -120,8 +128,8 @@ input, select, textarea {
 			html {
 				font-size: 12pt;
 			}
-
 		}
+
 
 		@media screen and (max-width: 736px) {
 
@@ -644,6 +652,13 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.work-img img{
+		width: 25%;
+		display: inline-flex;
+		align-content:flex-start;
+		justify-content: space-around; 
+	}
+
 		.image:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
@@ -1111,7 +1126,7 @@ input, select, textarea {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
-		-webkit-backface-visibility: hidden;
+		/* -webkit-backface-visibility: hidden; */
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1140,9 +1155,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1221,7 +1239,6 @@ input, select, textarea {
 			#wrapper {
 				padding: 2rem 1rem;
 			}
-
 		}
 
 		@media screen and (max-width: 480px) {
@@ -1291,7 +1308,7 @@ input, select, textarea {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 4px #ffffff;
 			border-radius: 100%;
 		}
 
@@ -1305,6 +1322,11 @@ input, select, textarea {
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
+		}
+
+		.fa-user-circle{
+			display:box;
+			margin-top:11%;
 		}
 
 			#header .content .inner {
@@ -1441,6 +1463,12 @@ input, select, textarea {
 				width: 4.75rem;
 				height: 4.75rem;
 				line-height: 4.75rem;
+			}
+
+			.fa-user-circle{
+				/* border:1px solid red; */
+				display:box;
+				margin-top:3%;
 			}
 
 				#header .logo .icon:before {
